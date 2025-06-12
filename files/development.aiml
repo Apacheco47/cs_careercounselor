@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>DEV</pattern>
+	    <template>
+	        Ahh Excellent Choice! Then may I suggest a career in SOFTWARE DEVELOPMENT!
+	        These are some careers that you can do within Software Development, select one to learn about it!
+	   
+	        <button>
+	            <text>Software Engineer</text>
+	            <postback>SOFT</postback>
+	        </button>
+	        <button>
+	            <text>Web Developer</text>
+	            <postback>WEB</postback>
+	       </button>
+	        <button>
+	            <text>Mobile App Developer</text>
+	            <postback>MOBILEAPP</postback>
+	       </button>
+	        <button>
+	            <text>Front-End Developer</text>
+	            <postback>FRONTEND</postback>
+	       </button>
+	      	<button>
+	      	    <text>Back-End Developer</text>
+	      	    <postback>BACKEND</postback>
+	      	</button>
+	      	<button>
+	      	    <text>Go Back!</text>
+	      	    <postback>flow1</postback>
+	      	</button>
+	    </template>
+    </category>
+    
+<category>
+    <pattern>SOFT</pattern>
+    <template>
+        A software developer designs, builds, and maintains computer programs and applications.
+        They analyze user needs to create effective digital solutions. 
+        Developers write code in languages like Python, Java, or C++. They test and debug software to ensure it works properly. 
+        <button>
+            <text>Go Back!</text>
+            <postback>DEV</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>WEB</pattern>
+    <template>
+        A web developer is a tech professional who designs, builds, and maintains websites and web applications.
+        They write code using languages like HTML, CSS, and JavaScript to create functional, user-friendly sites.
+        Web developers work with designers and project managers to ensure websites meet demands.
+        Their responsibilities include integrating data from back-end services, testing for bugs, and updating content or features as needed.
+        <button>
+            <text>Go Back!</text>
+            <postback>DEV</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>MOBILEAPP</pattern>
+    <template>
+        A mobile app developer creates, tests, and maintains applications for smartphones and tablets.
+        They use programming languages like Swift for iOS or Kotlin/Java for Android, or frameworks like React Native for cross-platform development.
+        Mobile app developers work with designers and product teams to turn ideas into apps.
+        Their responsibilities include debugging, optimizing performance, and ensuring compatibility across different devices and operating systems.
+        <button>
+            <text>Go Back!</text>
+            <postback>DEV</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>FRONTEND</pattern>
+    <template>
+        A front end developer builds the part of a website or web application that users see and interact with directly.
+        They use languages like HTML, CSS, and JavaScript to create visually appealing, user-friendly interfaces. Front end developers translate design wireframes into code and ensure the technical feasibility of UI/UX designs.
+        They work with designers, back end developers, and other team members to improve usability and functionality.
+        Their work includes optimizing websites for speed, scalability, and cross-device compatibility.
+        <button>
+            <text>Go Back!</text>
+            <postback>DEV</postback>
+        </button>
+    </template>
+</category>
+    
+<category>
+    <pattern>BACKEND</pattern>
+    <template>
+        A back end developer builds and maintains the server, database, and application logic that power websites and web applications behind the scenes.
+        They write code in languages like Python, Java, or Node.js to handle data processing, storage, and security.
+        Back end developers design and manage databases, create APIs that allow front end systems to communicate with servers, and ensure data integrity and performance.
+        They work with front end developers and other team members to deliver seamless, reliable user experiences.
+        <button>
+            <text>Go Back!</text>
+            <postback>DEV</postback>
+        </button>
+    </template>
+</category>
+</aiml>

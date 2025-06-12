@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>*</pattern>
+	        <template>
+	         You look like you need some help...
+	         Use the button prompts to communicate with me.
+	         <button>
+                    <text>YES PLEASE!</text>
+                <postback>YES</postback>
+            </button>
+
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            ...Let's get started!
+            <button>
+                <text>MAY THE LEARNING COMMENCE!</text>
+                <postback>flow1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>flow1</pattern>
+        <template>First, I need to know which one of these descriptions fits you best.
+        <button>
+            <text>Logical thinker that likes solving complex problems.</text>
+            <postback>DEV</postback>
+        </button>
+        <button>
+            <text>Analytical thinker that loves finding patterns.</text>
+            <postback>ANALYTICS</postback>
+        </button>
+        <button>
+            <text>Detail oriented and enjoys finding errors and irregularities. </text>
+            <postback>CYBER</postback>
+        </button>
+        <button>
+            <text>Troubleshooter that likes to keep things running smoothly.</text>
+            <postback>IT</postback>
+        </button>
+        <button>
+            <text>Curious explorer that enjoys exploring new tech.</text>
+            <postback>RESEARCH</postback>
+        </button>
+        <button>
+            <text>Exit Career Counselor</text>
+            <postback>NOESCAPE</postback>
+        </button>
+        </template>
+    </category>
+    
+    
+</aiml>

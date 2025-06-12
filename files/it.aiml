@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>IT</pattern>
+	    <template>
+	        Ahh Excellent Choice! Then may I suggest a career in IT SUPPORT!
+	        These are some careers that you can do within IT, select one to learn about it!
+	   
+	        <button>
+	            <text>Systems Administrator</text>
+	            <postback>SYSAD</postback>
+	        </button>
+	        <button>
+	            <text>DevOps</text>
+	            <postback>DEVOPS</postback>
+	       </button>
+	        <button>
+	            <text>Cloud Engineer</text>
+	            <postback>CLOUD</postback>
+	       </button>
+	       <button>
+	            <text>Go Back!</text>
+	            <postback>flow1</postback>
+	       </button>
+	    </template>
+    </category>
+
+<category>
+    <pattern>SYSAD</pattern>
+    <template>
+        A systems administrator is responsible for keeping a company’s computer systems and networks running smoothly.
+        They install, update, and fix hardware and software, and make sure everyone can connect and work without problems.
+        Systems administrators also monitor system performance, set up user accounts, and help employees with technical issues.
+        They protect data by making backups and keeping security up to date.
+        <button>
+            <text>Go Back!</text>
+            <postback>IT</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>DEVOPS</pattern>
+    <template>
+        A DevOps engineer helps connect the work of software developers and IT operations teams to make software projects run more smoothly and quickly.
+        They use automation tools to speed up building, testing, and releasing software.
+        DevOps engineers help set up and manage servers, cloud services, and other technical systems.
+        They also watch for problems and fix them to keep everything working well. 
+        <button>
+            <text>Go Back!</text>
+            <postback>IT</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>CLOUD</pattern>
+    <template>
+     A cloud engineer helps companies use online cloud services to store, manage, and run their data and applications.
+     They set up and take care of cloud platforms like AWS, Microsoft Azure, or Google Cloud so everything works smoothly and safely.
+     Cloud engineers make sure the systems are secure, reliable, and can grow as the company needs.
+     They also fix problems with the cloud and help other team members use it.
+        <button>
+            <text>Go Back!</text>
+            <postback>IT</postback>
+        </button>
+    </template>
+</category>
+</aiml>

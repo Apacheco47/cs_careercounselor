@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>RESEARCH</pattern>
+	    <template>
+	        Ahh Excellent Choice! Then may I suggest a career in RESEARCH DEVELOPMENT!
+	        These are some careers that you can do within Research Development, select one to learn about it!
+	        <button>
+	            <text>AI Researcher</text>
+	            <postback>AIR</postback>
+	        </button>
+	        <button>
+	            <text>Robotics Engineer</text>
+	            <postback>ROBO</postback>
+	       </button>
+	        <button>
+	            <text>Quantum Computing Specialist</text>
+	            <postback>QUANTUM</postback>
+	       </button>
+	      	<button>
+	      	    <text>Go Back!</text>
+	      	    <postback>flow1</postback>
+	      	</button>
+	    </template>
+    </category>
+
+<category>
+    <pattern>AIR</pattern>
+    <template>
+        An AI researcher studies and creates new ways for computers to learn and make decisions on their own.
+        They design and test algorithms and models that help machines understand information, solve problems, and even act like humans in some ways.
+        AI researchers often work with large amounts of data to train their models and check how well they work.
+        They share their findings by writing reports or publishing papers for others to learn from.
+       <button>
+            <text>Go Back!</text>
+            <postback>RESEARCH</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>ROBO</pattern>
+    <template>
+       A robotics engineer designs, builds, and tests robots and robotic systems for many different industries like manufacturing, healthcare, and automotive.
+       Robotics engineers write code to control how robots behave and work with sensors and motors to improve performance.
+       They also fix problems with robots and help keep them running smoothly and safely.
+        <button>
+            <text>Go Back!</text>
+            <postback>RESEARCH</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>QUANTUM</pattern>
+    <template>
+        A quantum computing specialist works with advanced computers that use quantum physics to solve problems much faster than regular computers.
+        They design and test quantum algorithms and systems, often using special hardware and software tools.
+        These specialists run experiments and research to make quantum technology better and more useful.
+        They work with scientists and engineers to find practical solutions and keep up with new developments. 
+        <button>
+            <text>Go Back!</text>
+            <postback>RESEARCH</postback>
+        </button>
+    </template>
+</category>
+</aiml>

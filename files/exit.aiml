@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>NOESCAPE</pattern>
+	    <template>Just kidding, You're stuck in an endless loop of career  knowledge! Have Fun!
+	    <button>
+            <text>Oh no!</text>
+            <postback>flow1</postback>
+        </button>
+        </template>
+    </category>
+</aiml>

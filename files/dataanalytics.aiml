@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>ANALYTICS</pattern>
+	    <template>
+	        Ahh Excellent Choice! Then may I suggest a career in DATA ANALYTICS!
+	        These are some careers that you can do within Data Analytics, select one to learn about it!
+	   
+	        <button>
+	            <text>Data Scientist</text>
+	            <postback>DATASCI</postback>
+	        </button>
+	        <button>
+	            <text>Data Analyst</text>
+	            <postback>DATAANA</postback>
+	       </button>
+	        <button>
+	            <text>Database Administrator</text>
+	            <postback>DBASEADMIN</postback>
+	       </button>
+	      	<button>
+	      	    <text>Go Back!</text>
+	      	    <postback>flow1</postback>
+	      	</button>
+	    </template>
+    </category>
+
+<category>
+    <pattern>DATASCI</pattern>
+    <template>
+        A data scientist collects and works with large amounts of data to find helpful information for businesses.
+        They use computer programs and math skills to spot patterns or trends in the data.
+        Data scientists also help build models that can make predictions about future events.
+        They often create charts or reports to explain their findings to others. 
+        <button>
+            <text>Go Back!</text>
+            <postback>ANALYTICS</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>DATAANA</pattern>
+    <template>
+        A data analyst works with information to help companies make better decisions.
+        They collect data from different sources and check it for mistakes or problems.
+        Data analysts use tools like Excel or programming to find patterns or trends in the data.
+        They make charts and reports to show what they find. 
+        <button>
+            <text>Go Back!</text>
+            <postback>ANALYTICS</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>DBASEADMIN</pattern>
+    <template>
+A database administrator takes care of a company’s databases so information is stored and managed safely.
+They make sure only the right people can access the data and that it is available when needed.
+They set up, update, and fix problems with databases to keep them running smoothly.
+They also back up data to prevent loss and help others use the databases.
+        <button>
+            <text>Go Back!</text>
+            <postback>ANALYTICS</postback>
+        </button>
+    </template>
+</category>
+</aiml>

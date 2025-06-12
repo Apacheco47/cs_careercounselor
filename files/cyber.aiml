@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>CYBER</pattern>
+	    <template>
+	        Ahh Excellent Choice! Then may I suggest a career in CYBERSECURITY!
+	        These are some careers that you can do within Cybersecurity, select one to learn about it!
+	        <button>
+	            <text>Cybersecurity Analyst</text>
+	            <postback>CYBERANA</postback>
+	        </button>
+	        <button>
+	            <text>Network Engineer</text>
+	            <postback>NETEN</postback>
+	       </button>
+	        <button>
+	            <text>Security Architect</text>
+	            <postback>ARCH</postback>
+	       </button>
+	      	<button>
+	      	    <text>Go Back!</text>
+	      	    <postback>flow1</postback>
+	      	</button>
+	    </template>
+    </category>
+
+<category>
+    <pattern>CYBERANA</pattern>
+    <template>
+        A cybersecurity analyst helps protect a company’s computer systems, networks, and data from online threats and hackers.
+        They watch for suspicious activity and investigate any security problems that come up.
+        Cybersecurity analysts set up tools like firewalls and encryption to keep information safe.
+        They also teach employees about best security practices and help fix weaknesses in the system.
+        <button>
+            <text>Go Back!</text>
+            <postback>CYBER</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>NETEN</pattern>
+    <template>
+        A network engineer helps set up and take care of a company’s computer networks so everyone can stay connected.
+        They install and fix network equipment like routers and switches, and make sure the internet and other network services work well.
+        Network engineers also look for and solve problems that come up with the network.
+        They help keep data safe by setting up security tools like firewalls. 
+        <button>
+            <text>Go Back!</text>
+            <postback>CYBER</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>ARCH</pattern>
+    <template>
+        A security architect helps keep an organization’s computer systems and networks safe from cyber threats.
+        They design and set up security solutions to protect important data and information.
+        Security architects look for weak spots in the system and fix them before hackers can attack.
+        They also make sure everyone follows security rules and helps train staff about staying safe online. 
+        <button>
+            <text>Go Back!</text>
+            <postback>CYBER</postback>
+        </button>
+    </template>
+</category>
+</aiml>
